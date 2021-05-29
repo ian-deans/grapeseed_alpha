@@ -1,0 +1,2 @@
+const about = "Grape Seed Crypto LLC. is a locally owned and operated business in Benicia, California that started in the early part of 2021. Benicia is a small town feel with a global reach within the industries that make up it’s character. From Main Street retailers to the refineries, we have a little bit of everything in Benicia.  So why not Crypto?  That’s where Grape Seed Crypto comes into the picture for the retail community."
+

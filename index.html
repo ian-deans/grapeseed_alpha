@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grapeseed Crypto</title>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <script src="content.js"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+    :root {
+        --yellow: #faff24;
+        --purple: #4654a3;
+        --purple-grape: #4b4c69;
+
+        --font-primary: "Play", sans-serif;
+        --font-header: 'Syncopate', sans-serif;
+    }
+
+    body {
+        /* background-color: var(--yellow); */
+        background: linear-gradient(to bottom right,#faff24, #fff);
+
+        font-family: var(--primary-font);
+        font-size: 14px;
+
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    body h2 {
+        color: var(--purple-grape);
+        font-family: var(--font-header);
+    }
+
+    body div {
+        color: var(--purple-grape);
+
+    }
+
+    figure {
+        margin-top: 2em;
+        height: auto;
+        width: auto;
+        padding: 0px;
+    }
+
+    #logo-image {
+        width: 100%;
+        min-width: 50px;
+        max-width: 512px;
+    }
+
+    #main-content {
+        margin-top: 1em;
+        width: 50%;
+
+        color: var(--purple-grape);
+    }
+</style>
+
+<body>
+    <figure>
+        <img id="logo-image" src="logo_transparent.png" />
+    </figure>
+    <h2>GrapeSeed Crypto</h2>
+    <p id="main-content">Coming Soon...</p>
+
+    <script>
+
+        const contentElement = document.getElementById( "main-content" )
+
+
+        contentElement.innerHTML = about
+        
+    </script>
+</body>
+
+</html>
