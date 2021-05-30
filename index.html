@@ -13,25 +13,32 @@
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Syncopate&family=Play&display=swap');
+
     :root {
         --yellow: #faff24;
         --purple: #4654a3;
         --purple-grape: #4b4c69;
 
-        --font-primary: "Play", sans-serif;
+        --font-primary: 'Play', sans-serif;
         --font-header: 'Syncopate', sans-serif;
     }
 
     body {
-        /* background-color: var(--yellow); */
-        background: linear-gradient(to bottom right,#faff24, #fff);
+        height: 100vh;
+        width: 100%;
+    }
 
-        font-family: var(--primary-font);
-        font-size: 14px;
+    .page {
+        /* background-color: var(--yellow); */
+        background: linear-gradient(#faff24 65%, #fff);
+
+        font-size: 16px;
 
         height: 100vh;
         width: 100vw;
+
+        overflow-y: auto;
 
         display: flex;
         flex-direction: column;
@@ -39,17 +46,26 @@
         justify-content: flex-start;
     }
 
-    body h2 {
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-family: var(--font-primary);
+        color: var(--purple-grape);
+
+    }
+
+    .content-div span {
         color: var(--purple-grape);
         font-family: var(--font-header);
-    }
-
-    body div {
-        color: var(--purple-grape);
+        font-size: 1.5em;
+        font-weight: 700;
 
     }
 
-    figure {
+    .logo-div figure {
         margin-top: 2em;
         height: auto;
         width: auto;
@@ -64,18 +80,36 @@
 
     #main-content {
         margin-top: 1em;
-        width: 50%;
+        width: 80%;
 
         color: var(--purple-grape);
+    }
+
+    @media only screen
+        and (min-device-width: 768px) 
+        /* and (max-device-width: 1024px)  */
+        /* and (-webkit-min-device-pixel-ratio: 2)  */
+        {
+            
+            .page {
+                font-size: 20px;
+            }
     }
 </style>
 
 <body>
-    <figure>
-        <img id="logo-image" src="logo_transparent.png" />
-    </figure>
-    <h2>GrapeSeed Crypto</h2>
-    <p id="main-content">Coming Soon...</p>
+    <div class="page">
+        <div class="logo-div">
+            <figure>
+                <img id="logo-image" src="logo_transparent.png" />
+            </figure>
+        </div>
+
+        <div class="content-div">
+            <span>GrapeSeed Crypto</span>
+            <p id="main-content">Coming Soon...</p>
+        </div>
+    </div>
 
     <script>
 
@@ -83,7 +117,7 @@
 
 
         contentElement.innerHTML = about
-        
+
     </script>
 </body>
 
